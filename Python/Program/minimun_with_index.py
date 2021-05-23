@@ -8,3 +8,4 @@ def get_min_index(l):
             index_min=index
     return "Min Value is " + str(min), "Min Value index is "+str(index_min)
 
+print(get_min_index([11,12,44,5,70]))
