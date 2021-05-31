@@ -8,4 +8,20 @@ def bubble(l):
                 l[j+1]=temp
     return l
 
-print(bubble([1,10,12,3,9,2]))
+
+def zigzag(l):
+    ll=[]
+    last_index=len(l)-1
+    loop_to_run=int(len(l)/2)
+    i=0
+    print(loop_to_run, len(l))
+    while i<loop_to_run:
+        ll.append(l[i])
+        ll.append(l[last_index])
+        i+=1
+        last_index-=1
+    if len(l)%2==1:
+        ll.append(l[loop_to_run])
+    return ll
+
+print(zigzag(bubble([11,3,5,7,9,11,13,15,17])))
